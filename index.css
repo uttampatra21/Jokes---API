@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Open+Sans&family=Petit+Formal+Script&family=Roboto:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    text-decoration: none;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #81ecec;
+}
+.container{
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+.tittle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+}
+.tittle .dash{
+    width: 40px;
+    height: 2px;
+    background-color: red;
+}
+#quote{
+    font-size: 20px;
+}
+.author{
+    margin: 30px 0;
+    text-align: end;
+}
