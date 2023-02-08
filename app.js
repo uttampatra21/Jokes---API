@@ -6,13 +6,13 @@ container.innerHTML = `
 <h2><em>Quote of the day</em></h2>
 <div class="dash"></div>
 </div>
-<p id="quote">" <span class="quotes">lorem ki ma ki c,vmsdkvvndsvksdvksdvnjdvdjvnvjdvn nvkd kvndnjv hut bhrnchod</span> "</p>
+<p id="quote">" <span class="quotes"></span> "</p>
 <div class="author">
 <i class="bi bi-dash-lg"></i><em class="authors"></em>
 </div>
 <div class="links">
-<a href="#">New Quote</a>
-<a href="#"><i class="bi bi-twitter"></i>Tweet</a>
+<a id="newQuote" href="#">New Quote</a>
+<p onclick='tweet'><i class="bi bi-twitter"></i>Tweet</p>
 </div>
 `
 
@@ -24,3 +24,13 @@ const getApi = async(url) =>{
     document.querySelector(".authors").innerHTML = data.author;
 }
 getApi(api);
+
+const newQuote = document.querySelector("#newQuote").addEventListener("click", ()=>{
+    location.reload();
+})
+
+const tweet = ()=>{
+    // window.open("https://twitter.com/intent/tweet?text", "Tweet Window", "width='600', height='300'");
+    alert('Tweet');
+}
+
